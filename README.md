@@ -8,6 +8,11 @@
 npm install --save vuetify-toast
 ```
 
+## Demo
+
+Demo: https://pzs.github.io/vuetify-toast
+
+
 ## Usage
 
 ### Bundler (Webpack, Rollup)
