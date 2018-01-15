@@ -1,0 +1,45 @@
+{
+  "name": "vuetify-toast",
+  "version": "0.0.1",
+  "description": "Simple toast service based on vuetify snackbar component.",
+  "author": "pzs",
+  "license": "MIT",
+  "homepage": "https://github.com/pzs/vuetify-toast",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pzs/vuetify-toast.git"
+  },
+  "main": "dist/vuetify-toast.cjs.js",
+  "module": "dist/vuetify-toast.m.js",
+  "browser": "dist/vuetify-toast.js",
+  "cdn": "dist/vuetify-toast.min.js",
+  "unpkg": "dist/vuetify-toast.min.js",
+  "files": [
+    "dist",
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "npm run build:module && npm run build:browser",
+    "build:module": "bili --name vuetify-toast --format cjs,es --plugin vue",
+    "build:browser": "bili --name vuetify-toast --format umd,umd-min --module-name vuetifyToast --external vue --global.vue \"Vue\" --plugin vue",
+    "lint": "eslint --ext js --ext vue src",
+    "lint:fix": "npm run lint -- --fix",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "bili": "^1.5.8",
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-vue": "^4.2.0",
+    "rollup-plugin-vue": "^3.0.0",
+    "vue": "^2.5.13",
+    "vue-template-compiler": "^2.5.13"
+  },
+  "peerDependencies": {
+    "vue": "*",
+    "vuetify": "*"
+  }
+}
