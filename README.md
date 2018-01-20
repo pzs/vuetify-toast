@@ -20,7 +20,7 @@ Demo: https://pzs.github.io/vuetify-toast
 ```js
 import vuetifyToast from 'vuetify-toast'
 
-vuetifyToast.info('This is az info toast');
+vuetifyToast.info('This is an info toast');
 
 vuetifyToast.success('The document has been saved.');
 
