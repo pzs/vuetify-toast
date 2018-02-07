@@ -26,6 +26,7 @@ vuetifyToast.success('The document has been saved.');
 
 vuetifyToast.show({
     text: 'Test message',
+    icon: 'information',
     color: 'warning',
     timeout: 10000,
     dismissible: false
@@ -62,7 +63,8 @@ vuetifyToast.show({
 
 ### Options
 
-- `text` (String)
+- `text` (String) The text to show in the snackbar
+- `icon` (String) If you want to use an icon to the left in the snackbar
 - `color` (String) Color of the snackbar, you can use any valid [vuetify class](https://vuetifyjs.com/style/colors). Default `'info'`
 - `timeout` (Number) Timeout in milliseconds, default: `3000`
 - `dismissible` (Boolean) default `true`
