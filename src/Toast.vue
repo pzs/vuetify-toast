@@ -7,7 +7,12 @@
     class="application"
     @click="dismiss">
 
-    <v-icon dark left v-if="icon.length > 0">{{icon}}</v-icon>
+    <v-icon
+      dark
+      left
+      v-if="icon.length > 0">
+      {{ icon }}
+    </v-icon>
 
     {{ text }}
 
