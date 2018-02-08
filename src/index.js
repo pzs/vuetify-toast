@@ -6,6 +6,7 @@ const colors = ['success', 'info', 'error'];
 
 const defaultOptions = {
   text: '',
+  icon: '',
   color: 'info',
   timeout: 3000,
   dismissible: true,

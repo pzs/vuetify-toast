@@ -7,6 +7,13 @@
     class="application"
     @click="dismiss">
 
+    <v-icon
+      dark
+      left
+      v-if="icon.length > 0">
+      {{ icon }}
+    </v-icon>
+
     {{ text }}
 
   </v-snackbar>
@@ -22,6 +29,7 @@ export default {
     return {
       active: false,
       text: '',
+      icon: '',
       color: 'info',
       timeout: 3000,
       dismissible: true,
