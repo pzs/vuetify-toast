@@ -16,7 +16,7 @@
         <h1>Vuetify Toast Demo</h1>
         <v-btn @click="success('Hello')" color="primary">Show 'hello'</v-btn>
         <v-btn @click="error('Error')" color="primary">Show 'error'</v-btn>
-        <v-btn @click="showToast({timeout: 10000, text: 'This is an information.'})" color="primary">Show toast for 10 sec</v-btn>
+        <v-btn @click="showToast({timeout: 10000, text: 'This is an information.', icon: 'info'})" color="primary">Show toast for 10 sec</v-btn>
         <br>
         <br>
         <pre>
@@ -27,7 +27,8 @@
           vuetifyToast.show({
             text: 'This is an information.',
             color: 'info',
-            timeout: 10000
+            timeout: 10000,
+            icon: 'info'
           });
         </pre>
         <br>
