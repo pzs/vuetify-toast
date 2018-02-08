@@ -1,6 +1,6 @@
 {
   "name": "vuetify-toast",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Simple toast service based on vuetify snackbar component.",
   "author": "pzs",
   "license": "MIT",
