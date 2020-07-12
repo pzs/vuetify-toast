@@ -1,6 +1,8 @@
 # Vuetify Toast
 
-> Simple toast service based on [vuetify](https://github.com/vuetifyjs/vuetify) snackbar component. (<1kB gzip)
+> Simple toast service based on [Vuetify](https://github.com/vuetifyjs/vuetify) snackbar component. (<1kB gzip)
+
+for [Vuetify](https://github.com/vuetifyjs/vuetify) version 1.x
 
 ## Installation
 
